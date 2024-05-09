@@ -1,0 +1,18 @@
+# Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
+
+tasks:
+  - init: npm install
+    command: |
+      export HRM_HOST=`gp url 5173`
+      npm run dev
+
+ports:
+  - port: 5173
+    onOpen: open-browser
+
+vscode:
+  extensions:
+    - svelte.svelte-vscode
+
+
+
